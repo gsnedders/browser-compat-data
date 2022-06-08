@@ -151,7 +151,7 @@ describe('ConsistencyChecker.isVersionAddedGreater()', function () {
         { chrome: { version_added: '≤2' } },
         'chrome',
       ),
-      false,
+      true,
     );
 
     assert.equal(
@@ -168,7 +168,7 @@ describe('ConsistencyChecker.isVersionAddedGreater()', function () {
         { chrome: { version_added: '≤2' } },
         'chrome',
       ),
-      false,
+      true,
     );
     assert.equal(
       check.isVersionAddedGreater(

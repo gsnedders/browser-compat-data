@@ -431,9 +431,6 @@ export class ConsistencyChecker {
       typeof a_version_added === 'string' &&
       typeof b_version_added === 'string'
     ) {
-      if (b_version_added.startsWith('≤')) {
-        return false;
-      }
       return compareVersions.compare(a_version_added, b_version_added, '<');
     }
 
